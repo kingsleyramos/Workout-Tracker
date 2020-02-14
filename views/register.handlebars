@@ -1,0 +1,19 @@
+{{> title }}
+{{!-- registration form --}}
+<div class="row">
+  <h3>Register for new account</h3>
+  <form id="register" action="/api/users/register" method="POST">
+    {{!-- username --}}
+    <div class="form-group">
+      <label for="username">New Username</label>
+      <input type="text" class="form-control" id="username">
+    </div>
+    {{!-- password --}}
+    <div class="form-group">
+      <label for="password">New Password</label>
+      <input type="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+</div>
+<script type="text/javascript" src="js/register.js"></script>

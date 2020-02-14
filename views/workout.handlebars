@@ -1,0 +1,24 @@
+{{> title }}
+
+<div class="row">
+    <a id="back" href="/workouts">< Back</a>
+</div>
+<br>
+<form id="workout" >
+    {{!-- username --}}
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title"></input>
+    </div>
+    {{!-- workout --}}
+    <div class="form-group">
+        <label for="workout">Workout</label>
+        <textarea type="text" class="form-control" id="body" rows="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Save</button>
+    <button class="btn btn-primary" id="delete">Delete</button>
+</form>
+
+<script type="text/javascript" src="/js/workout.js"></script>
+
+{{> footer }}
