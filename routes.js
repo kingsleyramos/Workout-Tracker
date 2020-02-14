@@ -9,7 +9,7 @@ module.exports = function(app){
 	const apiWorkouts = require('./routes/workouts');
 
 	// html routes
-	// app.use('/', application);
+	app.use('/', application);
 	// api routes
 	app.use('/api/users', apiUsers);
 	app.use('/api/workouts', apiWorkouts);
