@@ -10,6 +10,7 @@ router.get('/', application_controller.login);
 router.get('/register', application_controller.register);
 router.get('/home', isAuthenticated, application_controller.home);
 router.get('/workouts/', isAuthenticated, application_controller.workouts);
-router.get('/workout/edit/:id', isAuthenticated, application_controller.workout);
+router.get('/workout/', isAuthenticated, application_controller.workout);
+router.get('/workout/:id', isAuthenticated, application_controller.workout);
 
 module.exports = router;
