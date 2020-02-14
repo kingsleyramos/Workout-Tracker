@@ -1,0 +1,75 @@
+/* general styles */
+h1 {
+  margin: .5em auto !important;
+}
+h1, h2, h3, button, .btn {
+  font-family: Crimson Text;
+}
+h1, h2, h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+button, .btn {
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  text-align: center;
+}
+a {
+  color: #002281;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #3873aa;
+}
+.center {
+  margin: 0 auto;
+}
+.user-menu{
+  margin:1em auto;
+}
+button, .btn {
+  background-color: #002281 !important;
+  border: 1px solid white !important;
+  width:100%;
+}
+button:hover, .btn:hover {
+  background-color: #3873aa !important;
+}
+.container-sm {
+  max-width: 400px !important;
+}
+#back{
+  padding-left:1em;
+}
+
+/* login form */
+#login, #register{
+  margin: 1em auto;
+}
+
+/* party and character */
+ul{
+  margin: 0 auto;
+  padding: 0;
+  width:100%;
+}
+li {
+  color:white;
+  list-style: none;
+  padding:.25em;
+  margin:0;
+  background-color: #002281 !important;
+  border: 1px solid white;
+  height:3em;
+  text-align: center;
+}
+li:hover {
+  background-color: #3873aa !important;
+}
+/* .empty-character{
+  background-color: #dd7b7b !important;
+} */
+/* footer */
+footer {
+  margin-top: 2em;
+}
