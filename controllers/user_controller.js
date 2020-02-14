@@ -21,7 +21,6 @@ exports.register = function (req, res){
 
         // set the user's local credentials
         newUser.username    = req.body.username;
-        newUser.email       = req.body.email;
         newUser.password    = newUser.generateHash(req.body.password);
 
         // save the user
@@ -45,5 +44,5 @@ exports.login = function (req,res){
 
 exports.logout = function (req, res){
     req.logout();
-    res.send("logged out");
+    res.redirect("/");
 };
