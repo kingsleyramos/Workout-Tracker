@@ -37,7 +37,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Initialize Mongo database named workoutsdb
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutTracker", { useNewUrlParser: true });
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workoutTracker";
+mongoose.connect(MONGODB_URI);
 
 // Add routes
 require('./routes')(app);
