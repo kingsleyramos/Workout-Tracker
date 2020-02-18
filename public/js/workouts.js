@@ -1,10 +1,6 @@
 //query API
 $.getJSON( "/api/workouts", function( workouts ) {
-    //console log response
-    console.log(workouts);
-    //const length = Object.keys(workouts).length;
-    //build HTML template
-    console.log(workouts[0]._id);
+
     let listHTML="";
     for (let i=0; i < workouts.length ; i++){
         listHTML+= `
